@@ -1,0 +1,9 @@
+services:
+  - name: backend
+    build: ./backend
+    env:
+      - DATABASE_URL
+  - name: frontend
+    build: ./frontend
+networks:
+  - default
